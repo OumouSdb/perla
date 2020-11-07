@@ -11,49 +11,99 @@
     <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@300&display=swap" rel="stylesheet">
     <title>Perla</title>
 </head>
-<body style="background: beige;">
-    <i class="fas fa-shopping-basket"></i>
+<body style="background: #FEE0D7;">
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<i class="fas fa-shopping-basket" style="float: right; margin: 10px;" id="nombreArticle">1</i>
+
+<nav role="navigation">
+    
+    <div id="menuToggle">
+
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <div class="cart-items">
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong><br>
+                <span class="cart-total-price">0.00€</span><br>
+                <a href="panier.html" style="color: black;" id="voirPanier"><p>Voir le panier</p></a>
+            </div>
+      </ul>
+    </div>
+  </nav>
+
+</div>
+
 
     <h1><img src="https://fontmeme.com/permalink/201023/551e9119b599ce37024cab1d93a939d7.png" alt="police-made-cannes" border="0" class="titre"></h1>
     <h3><img src="https://fontmeme.com/permalink/201022/4c748817210e94e1e6069bdbdecdcaad.png" alt="police-mademoiselle-camille" border="0" class="titre"></h3>
     <hr>
     <p>
-        Envie d'être irrésistible même avec un turban ? Vous êtes au bon endroit. Perla est une marque de turban sur mesure.
-        Il vous suffit simplement de choisir votre tissus, en WAX en Satin... ensuite de remplir le formulaire tout en bas en spécifiant si c'est pour un enfant ou un adulte puis de choisir la date limite du dépot.
-        Pour un turban le délai peut être de 24 à 48h.
-        N'attendez plus, passez votre commande, Perla s'occupe de tout.
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     </p>
     <hr>
-    <div class="container">
-    <div >
-        <a href="#">
-        <img src="image/bonnet.png" class="container-img">
-            <p><a href="https://fontmeme.com/polices/police-mademoiselle-camille/"><img src="https://fontmeme.com/permalink/201022/1ff6dc72ff7c4d35409234b96604b067.png" alt="police-mademoiselle-camille" border="0"></a></p>
-        </a>
-    </div>
-    <div >
-        <a>
-        <img src="image/bonnet.png" class="container-img">
-            <p><a href="https://fontmeme.com/polices/police-mademoiselle-camille/"><img src="https://fontmeme.com/permalink/201022/d65f65c2010b3119a9bc96fc343e976e.png" alt="police-mademoiselle-camille" border="0"></a></p>
-        </a>
-    </div>
-    <div >
-        <a>
-        <img src="image/bonnet.png" class="container-img">
-            <p><a href="https://fontmeme.com/polices/police-mademoiselle-camille/"><img src="https://fontmeme.com/permalink/201022/2c0d8f8b2e5f0152261af087a6055b60.png" alt="police-mademoiselle-camille" border="0"></a></p>
-        </a>
-    </div>
-    <div >
-        <a>
-        <img src="image/bonnet.png" class="container-img">
-            <p><a href="https://fontmeme.com/polices/police-mademoiselle-camille/"><img src="https://fontmeme.com/permalink/201022/240faf33ace900d208268dfcd68de9b1.png" alt="police-mademoiselle-camille" border="0"></a></p>
-        </a>
-    </div>
+   
 
-      </div>
-    </div>
+  <div class="container">
+        <div class="shop-item">
+        <span class="shop-item-title">Crown</span>
+        <img class="shop-item-image" src="image/bonnet.png" width="250" height="250"><br>
+        <div class="shop-item-details">
+        <span class="shop-item-price">20.00€</span><br>
+        <button class="btn btn-primary shop-item-button" type="button" style="background: #E54B8F;">Ajouter au panier</button>
+        </div>
+        </div>
+
+        <div class="shop-item">
+            <span class="shop-item-title" >Queen</span>
+            <img class="shop-item-image" src="image/bonnet.png" width="250" height="250"><br>
+            <div class="shop-item-details">
+            <span class="shop-item-price">20.00€</span><br>
+            <button class="btn btn-primary shop-item-button" style="background: #E54B8F;" type="button">Ajouter au panier</button>
+            </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Bella</span>
+                <img class="shop-item-image" src="image/bonnet.png" width="250" height="250"><br>
+                <div class="shop-item-details">
+                <span class="shop-item-price">10.00€</span><br>
+                <button class="btn btn-primary shop-item-button" type="button" style="background: #E54B8F;">Ajouter au panier</button>
+                </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Princesse</span>
+                    <img class="shop-item-image" src="image/bonnet.png" width="250" height="250"><br>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">8.00€</span><br>
+                    <button class="btn btn-primary shop-item-button" type="button" style="background: #E54B8F;">Ajouter au panier</button>
+                    </div>
+                    </div>
+  </div>
+    
     <hr>
-    <h1><a href="https://fontmeme.com/polices/police-bianca-nananissa/"><img src="https://fontmeme.com/permalink/201022/a9c6fea3160bf115de761735a6baf90f.png" alt="police-bianca-nananissa" border="0" class="titre"></a></h1>
+    <h1><a href="https://fontmeme.com/polices/police-bianca-nananissa/"></a><img src="https://fontmeme.com/permalink/201022/a9c6fea3160bf115de761735a6baf90f.png" alt="police-bianca-nananissa" border="0" class="titre"></a></h1>
 
     <div class="container2">
         <div >
@@ -95,5 +145,56 @@
           </form>
 
     </div>
+    <!-- <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Album 1</span>
+            <img class="shop-item-image" src="Images/Album 1.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$12.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div> -->
+
+            <!-- <div class="shop-item">
+                <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src="image/bonnt.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div> -->
+
+
+ 
+            <!-- <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="image/bonnet.png" width="100" height="100">
+                    <span class="cart-item-title">Crown</span>
+                </div>
+                <span class="cart-price cart-column">19.99€</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="test btn btn-primary" type="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="image/bonnet.png" width="100" height="100">
+                    <span class="cart-item-title">Princesse</span>
+                </div>
+                <span class="cart-price cart-column">9.99€</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="test btn btn-primary" type="button">REMOVE</button>
+                </div>
+            </div> -->
+      
+
+      
+  
+
+  
+      
+        <script src="script.js"></script>
+
+
 </body>
 </html>
